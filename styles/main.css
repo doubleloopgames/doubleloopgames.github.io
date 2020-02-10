@@ -66,7 +66,9 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 #news .talks .title i { font-weight: normal; }
 
 #games { padding: 6.8rem 0; background: #fdcc48 url("../images/games-background2.jpg") no-repeat; background-size: cover; }
-#games .desc { width: 60%; max-width: 70rem; margin: 4rem auto 0; background-color: rgba( 255, 225, 132, 0.5); border-radius: 3rem; padding: 5.2rem 5rem; font-size: 2.8rem; line-height: 4.2rem; }
+#games .desc { width: 60%; max-width: 70rem; margin: 4rem auto 0; background-color: rgba( 255, 225, 132, 0.5); border: 1px solid #fdbd34; border-radius: 3rem; padding: 5.2rem 5rem; }
+#games .desc p { font-size: 2.8rem; line-height: 4.2rem; }
+#games .desc .secondary { max-width: 60rem; margin: 3rem auto 0; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.5); font-size: 2.2rem; line-height: 3.8rem; }
 
 #jobs .desc { width: 70%; max-width: 90rem; }
 #jobs h4 { font: normal 2.4rem 'Noah-Regular', Helvetica, Arial, sans-serif; margin: 6rem 0 2.5rem; }
@@ -156,6 +158,8 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .talks li { padding: 2.6rem 0 2rem; }
   #games { padding: 4rem 2.5rem 5rem; }
   #games .desc { width: auto; font-size: 2rem; line-height: 3rem; margin-top: 2.3rem; padding: 3.5rem 2rem; }
+  #games .desc p { font-size: 2rem; line-height: 3rem; }
+  #games .desc .secondary { font-size: 1.8rem; line-height: 2.8rem; border: 0; margin-top: 2rem; padding-top: 0; }
   #jobs .desc { width: 85%; }
   #jobs h4 { font-size: 1.8rem; margin: 4rem 0 2rem; }
   #jobs .job-post { padding: 3rem 2rem; }
