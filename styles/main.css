@@ -43,7 +43,7 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 #whoweare { text-align: center; }
 #whoweare .desc { width: 60%; }
 #whoweare .team { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center; margin-top: 3rem; }
-#whoweare .team li { width: 28rem; margin: 3rem 1.2rem 0; text-align: left; }
+#whoweare .team li { width: 27.6rem; margin: 3rem 1rem 0; text-align: left; }
 #whoweare .team li img { display: block; width: 27.6rem; height: 18.4rem; margin-bottom: 1.5rem; border-radius: 0.5rem; box-shadow: 0 0 3px rgba(0, 0, 0, .3); }
 #whoweare .team .name { display: block; font: normal 2rem 'Noah-Bold', Helvetica, Arial, sans-serif; line-height: 4rem; letter-spacing: 0.05rem; }
 #whoweare .team .title { letter-spacing: 0.03rem; }
@@ -106,6 +106,8 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
 }
 @media only screen and (max-width: 1200px) {
   header nav .nav-link a { margin: 0 1rem; }
+  #whoweare { padding: 6rem 0 4rem; }
+  #whoweare .team { max-width: 60rem; margin: 0 auto; }
   #news .container { width: 90%; }
   #news .desc { padding-right: 0; }
   #jobs .desc { width: 80%; }
@@ -152,7 +154,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
 
 @media only screen and (max-width: 599px) {
   h2 { font-size: 2rem; }
-  section { padding: 4rem 0; }
+  section, #whoweare { padding: 4rem 0; }
   .desc { font-size: 1.8rem; line-height: 2.6rem; }
   #hero .message { width: 88%; font-size: 2.4rem; line-height: 3.6rem; margin: 5rem auto 2.5rem; }
   #hero .primary-btn { padding: 1.8rem 5rem 1.6rem;
