@@ -174,9 +174,10 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #games { padding: 4rem 2.5rem 5rem; }
   #games .desc { width: auto; font-size: 2rem; line-height: 3rem; margin-top: 2.3rem; padding: 3.5rem 2rem; }
   #games .desc p { font-size: 2rem; line-height: 3rem; }
-  #games .desc .secondary { font-size: 1.8rem; line-height: 2.8rem; border: 0; margin-top: 2rem; padding-top: 0; }
+  #games .desc .secondary { font-size: 2rem; line-height: 3rem; border: 0; margin-top: 2rem; padding-top: 0; }
   #jobs .desc { width: 85%; }
   #jobs h4 { font-size: 1.8rem; margin: 4rem 0 2rem; }
+  #jobs .current-opens { font-size: 1.8rem; line-height: 2.6rem; width: 85%; }
   #jobs .job-post { padding: 3rem 2rem; }
   #jobs .job-title { font-size: 2rem; }
   #jobs .job-description p, #jobs .job-post .job-description ul li { font-size: 1.6rem; line-height: 2.4rem; }
@@ -187,7 +188,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
 
 @media only screen and (max-width: 450px) {
   header nav .nav-link { width: auto; }
-  header nav .nav-link a { font-size: 1.3rem; width: auto; padding: 0 1.1rem; }
+  header nav .nav-link a { font-size: 1.3rem; font-weight: 400; width: auto; padding: 0 1.1rem; }
   header nav .nav-link:first-child a { padding-left: 0; }
   header nav .nav-link:last-child a { padding-right: 0; }
   #news .container { width: 80%; }
