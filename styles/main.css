@@ -58,13 +58,16 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
   flex-direction: column;
   padding-right: 4rem; }
 #news .updates { width: 64rem; padding-left: 4rem; }
-#news .updates article { display: block; margin: 1.6rem 0 2.6rem; background-color: #fcfcfc; border-radius: 1rem; overflow: auto; box-shadow: 0 0 5px rgba(0, 0, 0, .2); overflow: auto; }
-#news .updates article .image { float: left; width: 40%; }
-#news .updates article .image img { width: 100%; }
-#news .updates article .content { float: left; width: 60%; vertical-align: middle; }
-#news .updates article .inner-content { display: block; padding: 2.5rem 2rem 2rem; }
-#news .updates article .content .title { font-size: 2.2rem; font-family: 'Noah-Bold', Helvetica, Arial, sans-serif; font-weight: normal; margin: 0.8rem 0 1.5rem; }
-#news .updates article .content .full-post { text-decoration: none; }
+#news .updates .article { display: block; margin: 1.6rem 0 2.6rem; background-color: #fcfcfc; border-radius: 1rem; overflow: auto; box-shadow: 0 0 5px rgba(0, 0, 0, .2); overflow: auto; cursor: pointer; transition: box-shadow 0.5s; }
+#news .updates .article:hover { box-shadow: 0 0 8px rgba(0, 0, 0, .3);}
+#news .updates .article .image { float: left; width: 40%; }
+#news .updates .article .image img { width: 100%; }
+#news .updates .article .content { float: left; width: 60%; vertical-align: middle; }
+#news .updates .article .inner-content { margin: 2.1rem 2rem 2rem; }
+#news .updates .article .content .title { display: block; font-size: 2.2rem; font-family: 'Noah-Bold', Helvetica, Arial, sans-serif; font-weight: normal; margin: 0.8rem 0 1.5rem; }
+#news .updates .article .content .full-post { text-decoration: none; }
+#news .updates .article .content .full-post:after { content: "\2192"; padding-left: 0.5rem; transition: padding-left 0.3s; }
+#news .updates .article .content .inner-content:hover .full-post:after { padding-left: 1rem; }
 #news .talks li:first-child { padding-top: 2rem; }
 #news .talks li { padding: 3.2rem 0 2.8rem; border-bottom: 1px solid #ddd1b6; }
 #news .talks .tags { display: block; margin-bottom: 0.8rem; }
