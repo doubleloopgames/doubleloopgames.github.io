@@ -1,6 +1,6 @@
 <html lang="en">
 
-    <head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158204714-1"></script>
     <script>
@@ -32,9 +32,27 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/site_fonts.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
   </head>
 
   <body id="home">
+
+    <!-- Mobile Nav -->
+    <input type="checkbox" class="toggle-nav" id="toggle-nav">
+    <div class="mobile-bar">
+      <label for="toggle-nav"></label>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="mobile-nav">
+        <ul>
+          <li class="mob-nav-link"><a href="#whoweare" id="mob-whoweare">Who we are</a></li>
+          <li class="mob-nav-link"><a href="#news" id="mob-news">News</a></li>
+          <li class="mob-nav-link"><a href="#games" id="mob-games">Games</a></li>
+          <li class="mob-nav-link"><a href="#jobs" id="mob-jobs">Jobs</a></li>
+        </ul>
+    </div>
 
     <div class="main">
 
@@ -101,7 +119,7 @@
             </p>
           </li>
         </ul>
-      </section><!-- whoweare -->
+      </section><!-- end whoweare -->
 
       <section id="news">
         <h2>News</h2>
@@ -132,7 +150,7 @@
             </ul>
           </div>
         </div>
-      </section><!-- whoweare -->
+      </section><!-- end news -->
 
       <section id="games">
         <h2>Games</h2>
@@ -140,7 +158,7 @@
           <p>We believe that the best games are made with love, enthusiasm, and respect for the audience. And the best games, properly supported, are enduring hobbies that connect us to each other.</p>
           <p class="secondary">We are working on a mobile-first title with a planned 2021 launch date. Check back for more information and announcements in the coming months.</p>
         </div>
-      </section><!-- whoweare -->
+      </section><!-- end games -->
 
       <section id="jobs">
         <h2>Jobs</h2>
@@ -213,7 +231,7 @@
             <p>Please send your full resume, references, and anything else you think we should see to <a href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>.</p>
           </dd>
         </div>
-      </section><!-- whoweare -->
+      </section><!-- end jobs -->
 
       <footer>
         <div class="container">
@@ -223,6 +241,19 @@
       </footer>
 
     </div><!-- end .main -->
+
+    <script>
+      document.getElementById("mob-whoweare").addEventListener("click",hide);
+      document.getElementById("mob-news").addEventListener("click",hide);
+      document.getElementById("mob-games").addEventListener("click",hide);
+      document.getElementById("mob-jobs").addEventListener("click",hide);
+      document.getElementById("overlay").addEventListener("click",hide);
+
+      function hide() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("toggle-nav").checked = false;
+      }
+    </script>
 
   </body>
 </html>
