@@ -223,7 +223,8 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   /* mobile nav styling */
   .mobile-nav { background-color: #ffc62d; padding-bottom: 2rem; box-shadow: 0 5px 5px 5px rgba(0,0,0,0.1); }
   .mob-nav-link { width: 80%; margin: 0 auto; padding: 1rem 0; border-bottom: 0.1rem solid rgba(255,255,255,0.5); }
-  .mob-nav-link a { display: block; font-size: 1.5rem; font-weight: 600; letter-spacing: 0.05rem; height: 4.5rem; line-height: 4.5rem; text-transform: uppercase; }
+  .mob-nav-link a { display: block; font-size: 1.5rem; font-weight: 600; letter-spacing: 0.05rem; height: 4.5rem; line-height: 4.5rem; text-transform: uppercase; cursor: pointer; }
+  .mob-nav-link a:hover { text-decoration: none; }
   .mob-nav-link:last-child { border-bottom-width: 0rem; }
 
   .toggle-nav:checked ~ .main { /* when the checkbox is checked the container slide-down */
