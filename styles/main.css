@@ -87,9 +87,9 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 
 /* jobs tabs */
 #jobs .job-tabs { float: left; width: 25%; }
-#jobs .job-tabs button { display: block; width: 100%; margin-bottom: 0.8rem; padding: 1.8rem 2rem; background-color: #efe8d6; font: normal 2.2rem 'Noah-Bold', Helvetica, Arial, sans-serif;text-align: left; cursor: pointer; outline: none; transition: 0.3s; border-radius: 5px 0 0 5px; }
-#jobs .job-tabs button:hover { background-color: #fefefb; }
-#jobs .job-tabs button.active { background-color: #fefefb; }
+#jobs .job-tabs a { display: block; width: 100%; margin-bottom: 0.8rem; padding: 1.8rem 2rem; background-color: #efe8d6; font: normal 2.2rem 'Noah-Bold', Helvetica, Arial, sans-serif;text-align: left; cursor: pointer; outline: none; transition: 0.3s; border-radius: 5px 0 0 5px; text-decoration: none; }
+#jobs .job-tabs a:hover { background-color: #fefefb; }
+#jobs .job-tabs a.active { background-color: #fefefb; }
 #jobs .tabcontent { float: left; width: 75%; }
 
 #jobs .job-post { padding: 3rem; text-align: left; background-color: #fefefb; border-radius: 0 0.8rem 0.8rem 0; }
@@ -153,7 +153,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .full-post { display: none; }
   #news .updates article .content .title, #news .talks .title { font-size: 2rem; line-height: 2.7rem; }
   #job-listings { width: 95%; }
-  #jobs .job-tabs button { font-size: 1.6rem; }
+  #jobs .job-tabs a { font-size: 1.6rem; }
   #jobs .job-title { font-size: 2rem; }
 }
 
@@ -189,7 +189,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #games .desc { width: auto; font-size: 2rem; line-height: 3rem; margin-top: 2.3rem; padding: 3.5rem 2rem; }
   #games .desc p { font-size: 2rem; line-height: 3rem; }
   #games .desc .secondary { font-size: 2rem; line-height: 3rem; border: 0; margin-top: 2rem; padding-top: 0; }
-  #jobs .job-tabs button { font-size: 1.6rem; }
+  #jobs .job-tabs a { font-size: 1.6rem; }
   #jobs .job-title { font-size: 2rem; }
   #jobs .desc { width: 85%; }
   #jobs h4 { font-size: 1.8rem; margin: 4rem 0 2rem; }
@@ -213,7 +213,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .updates article .content .title { font-size: 1.7rem; line-height: 2.4rem; margin-bottom: 0; }
   #news .full-post { display: block; margin-top: 1rem; }
   #jobs .job-tabs { display: flex; justify-content: center; float: none; width: auto; }
-  #jobs .job-tabs button { width: auto; margin: 0 0.2rem; padding: 1.2rem 1.6rem; border-radius: 0.8rem 0.8rem 0 0; }
+  #jobs .job-tabs a { width: auto; margin: 0 0.2rem; padding: 1.2rem 1.6rem; border-radius: 0.8rem 0.8rem 0 0; }
   #jobs .tabcontent { float: none; width: 100%; clear:both; }
 }
 
