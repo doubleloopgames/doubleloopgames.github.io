@@ -79,14 +79,22 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 #games .desc p { font-size: 2.8rem; line-height: 4.2rem; }
 #games .desc .secondary { max-width: 60rem; margin: 3rem auto 0; padding-top: 3rem; border-top: 1px solid rgba(255,255,255,0.5); font-size: 2.2rem; line-height: 3.8rem; }
 
+#job-listings { width: 80%; max-width: 120rem; margin: 0 auto; overflow: auto; }
 #jobs .desc { width: 70%; max-width: 90rem; }
 #jobs a { text-decoration: underline; }
 #jobs h4 { font: normal 2.4rem 'Noah-Regular', Helvetica, Arial, sans-serif; margin: 6rem 0 1rem; }
 #jobs .current-opens { width: 70%; max-width: 90rem; margin: 2rem auto; font-size: 2.1rem; line-height: 3.2rem; }
-#jobs .job-post { margin: 0 auto; padding: 3rem; width: 80%; max-width: 90rem; text-align: left; background-color: #fefefb; border-radius: 0.5rem; }
+
+/* jobs tabs */
+#jobs .job-tabs { float: left; width: 25%; }
+#jobs .job-tabs a { display: block; width: 100%; margin-bottom: 0.8rem; padding: 1.8rem 2rem; background-color: #efe8d6; font: normal 2.2rem 'Noah-Bold', Helvetica, Arial, sans-serif;text-align: left; cursor: pointer; outline: none; transition: 0.3s; border-radius: 5px 0 0 5px; text-decoration: none; }
+#jobs .job-tabs a:hover { background-color: #fefefb; }
+#jobs .job-tabs a.active { background-color: #fefefb; }
+#jobs .tabcontent { float: left; width: 75%; }
+
+#jobs .job-post { padding: 3rem; text-align: left; background-color: #fefefb; border-radius: 0 0.8rem 0.8rem 0; }
 #jobs .job-post h5 { display: block; margin-top: 2.7rem; }
 #jobs .job-title { font: normal 2.4rem 'Noah-Bold', Helvetica, Arial, sans-serif; }
-#jobs .job-description { }
 #jobs .job-description p, #jobs .job-post .job-description ul { margin: 1.3rem 0; }
 #jobs .job-description li { margin-left: 4.5rem; list-style-type: disc; font-size: 1.9rem; line-height: 2.8rem; color: #111; }
 
@@ -144,6 +152,9 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .container { width: 85%; }
   #news .full-post { display: none; }
   #news .updates article .content .title, #news .talks .title { font-size: 2rem; line-height: 2.7rem; }
+  #job-listings { width: 95%; }
+  #jobs .job-tabs a { font-size: 1.6rem; }
+  #jobs .job-title { font-size: 2rem; }
 }
 
 @media only screen and (max-width: 650px) {
@@ -178,6 +189,8 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #games .desc { width: auto; font-size: 2rem; line-height: 3rem; margin-top: 2.3rem; padding: 3.5rem 2rem; }
   #games .desc p { font-size: 2rem; line-height: 3rem; }
   #games .desc .secondary { font-size: 2rem; line-height: 3rem; border: 0; margin-top: 2rem; padding-top: 0; }
+  #jobs .job-tabs a { font-size: 1.6rem; }
+  #jobs .job-title { font-size: 2rem; }
   #jobs .desc { width: 85%; }
   #jobs h4 { font-size: 1.8rem; margin: 4rem 0 2rem; }
   #jobs .current-opens { font-size: 1.8rem; line-height: 2.6rem; width: 85%; }
@@ -199,6 +212,9 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .updates article .image, #news .updates article .content { width: 100%; }
   #news .updates article .content .title { font-size: 1.7rem; line-height: 2.4rem; margin-bottom: 0; }
   #news .full-post { display: block; margin-top: 1rem; }
+  #jobs .job-tabs { display: flex; justify-content: center; float: none; width: auto; }
+  #jobs .job-tabs a { width: auto; margin: 0 0.2rem; padding: 1.2rem 1.6rem; border-radius: 0.8rem 0.8rem 0 0; }
+  #jobs .tabcontent { float: none; width: 100%; clear:both; }
 }
 
 /* mobile menu */
