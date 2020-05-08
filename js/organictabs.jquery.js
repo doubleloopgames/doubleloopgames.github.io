@@ -40,12 +40,12 @@
                     $newList = $(this),
 
                 // Figure out ID of new list
-                    listID = $newList.attr("href").substring(1),
+                    listID = $newList.attr("href").substring(1)
 
                 // Set outer wrapper height to (static) height of current inner list
-                    $allListWrap = base.$el.find(".job-list"),
-                    curListHeight = $allListWrap.height();
-                		$allListWrap.height(curListHeight);
+                //    $allListWrap = base.$el.find(".job-list"),
+                //    curListHeight = $allListWrap.height();
+                //		$allListWrap.height(curListHeight);
 
                 if ((listID != curList) && ( base.$el.find(":animated").length == 0)) {
 
