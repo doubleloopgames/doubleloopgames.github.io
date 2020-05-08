@@ -32,7 +32,17 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/site_fonts.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="//code.jquery.com/jquery-compat-git.js"></script>
+
+    <!-- jobs tabs -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type="text/javascript" src="js/organictabs.jquery.js"></script>
+    <script>
+  		$(function() {
+  			$("#job-listings").organicTabs({
+            "speed": 200,
+        });
+  		});
+  	</script>
 
   </head>
 
@@ -205,14 +215,15 @@
         <div id="job-listings">
 
           <!-- Vertical Tabs -->
-          <div class="job-tabs">
-            <a class="tablinks" onclick="openJob(event, 'BackendEngineer')" id="defaultOpen">Backend Engineer</a>
-            <a class="tablinks" onclick="openJob(event, 'ConceptArtist')">Concept Artist</a>
-          </div>
+          <ul class="job-tabs">
+            <li><a href="#backend-engineer" class="current">Backend Engineer</a></li>
+            <li><a href="#concept-artist">Concept Artist</a></li>
+          </ul>
 
-          <!-- start Backend Engineer -->
-          <div id="BackendEngineer" class="tabcontent">
-            <div class="job-post">
+          <div class="job-list">
+
+            <!-- start Backend Engineer -->
+            <dl id="backend-engineer" class="job-post">
               <dt class="job-title">Backend Engineer</dt>
               <dd class="job-description">
                 <p>Double Loop Games is looking for an experienced backend engineer to help build out the server infrastructure for a new, original mobile game.</p>
@@ -270,13 +281,11 @@
                 </ul>
                 <p>Please send your full resume, references, and anything else you think we should see to <a href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>.</p>
               </dd>
-            </div>
-          </div>
-          <!-- end -->
+            </dl>
+            <!-- end -->
 
-          <!-- start Concept Artist -->
-          <div id="ConceptArtist" class="tabcontent">
-            <div class="job-post">
+            <!-- start Concept Artist -->
+            <dl id="concept-artist" class="job-post hide">
               <dt class="job-title">Concept Artist</dt>
               <dd class="job-description">
                 <p>Double Loop Games is looking for an Concept Artist to help set the look of a new, original mobile game.</p>
@@ -334,28 +343,10 @@
                   Please send your full resume, references, and anything else you think we should see to <a href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be prepared for an art test, if necessary.
                 </p>
               </dd>
-            </div>
+            </dl>
+            <!-- end -->
+
           </div>
-          <!-- end -->
-
-          <script>
-          function openJob(evt, jobName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(jobName).style.display = "block";
-            evt.currentTarget.className += " active";
-          }
-
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
-          </script>
 
         </div><!-- end #job-listings -->
 
