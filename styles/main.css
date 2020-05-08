@@ -87,10 +87,11 @@ section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 
 /* jobs tabs */
 #jobs .job-tabs { float: left; width: 25%; }
-#jobs .job-tabs a { display: block; width: 100%; margin-bottom: 0.8rem; padding: 1.8rem 2rem; background-color: #efe8d6; font: normal 2.2rem 'Noah-Bold', Helvetica, Arial, sans-serif;text-align: left; cursor: pointer; outline: none; transition: 0.3s; border-radius: 5px 0 0 5px; text-decoration: none; }
+#jobs .job-tabs a { display: block; margin-bottom: 0.8rem; padding: 1.8rem 2rem; background-color: #efe8d6; font: normal 2.2rem 'Noah-Bold', Helvetica, Arial, sans-serif;text-align: left; cursor: pointer; outline: none; transition: 0.3s; border-radius: 5px 0 0 5px; text-decoration: none; }
 #jobs .job-tabs a:hover { background-color: #fefefb; }
-#jobs .job-tabs a.active { background-color: #fefefb; }
-#jobs .tabcontent { float: left; width: 75%; }
+#jobs .job-tabs a.current { background-color: #fefefb; }
+#jobs .job-list { float: left; width: 75%; }
+#jobs .hide { position: absolute; top: -9999px; left: -9999px; }
 
 #jobs .job-post { padding: 3rem; text-align: left; background-color: #fefefb; border-radius: 0 0.8rem 0.8rem 0; }
 #jobs .job-post h5 { display: block; margin-top: 2.7rem; }
@@ -214,7 +215,7 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .full-post { display: block; margin-top: 1rem; }
   #jobs .job-tabs { display: flex; justify-content: center; float: none; width: auto; }
   #jobs .job-tabs a { width: auto; margin: 0 0.2rem; padding: 1.2rem 1.6rem; border-radius: 0.8rem 0.8rem 0 0; }
-  #jobs .tabcontent { float: none; width: 100%; clear:both; }
+  #jobs .job-list { float: none; width: 100%; clear:both; }
 }
 
 /* mobile menu */
