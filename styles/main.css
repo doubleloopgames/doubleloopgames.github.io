@@ -213,8 +213,8 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
   #news .updates article .image, #news .updates article .content { width: 100%; }
   #news .updates article .content .title { font-size: 1.7rem; line-height: 2.4rem; margin-bottom: 0; }
   #news .full-post { display: block; margin-top: 1rem; }
-  #jobs .job-tabs { display: flex; justify-content: center; float: none; width: auto; }
-  #jobs .job-tabs a { width: auto; margin: 0 0.2rem; padding: 1.2rem 1.6rem; border-radius: 0.8rem 0.8rem 0 0; }
+  #jobs .job-tabs { display: flex; flex-direction: column; justify-content: center; float: none; width: 100%; }
+  #jobs .job-tabs a { width: auto; margin: 0.2rem 0; padding: 1.2rem 1.6rem; border-radius: 0.7rem; }
   #jobs .job-list { float: none; width: 100%; clear:both; }
 }
 
