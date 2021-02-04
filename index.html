@@ -1,352 +1,723 @@
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158204714-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158204714-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-158204714-1');
-    </script>
+    gtag('config', 'UA-158204714-1');
+  </script>
 
-    <link rel="icon" href="images/favicon.ico" type="image/ico">
-    <title>Double Loop Games</title>
+  <link rel="icon" href="images/favicon.ico" type="image/ico">
+  <title>Double Loop Games</title>
 
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Double Loop Games, mobile games, mobile game studio, Emily Greer, Shelby Moledina">
-    <meta name="description" content="Double Loop Games is a new mobile studio dedicated to making delightful, relaxing experiences for the biggest audience in games: people who don't think of themselves as gamers. Founded by Emily Greer and Shelby Moledina.">
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Double Loop Games, mobile games, mobile game studio, Emily Greer, Shelby Moledina">
+  <meta name="description"
+    content="Double Loop Games is a new mobile studio dedicated to making delightful, relaxing experiences for the biggest audience in games: people who don't think of themselves as gamers. Founded by Emily Greer and Shelby Moledina.">
 
-    <!--open graph -->
-    <meta property="og:url" content="https://www.doubleloopgames.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Double Loop Games">
-    <meta property="og:description" content="We're a new mobile studio dedicated to making delightful, relaxing experiences for the biggest audience in games: people who don't think of themselves as gamers.">
-    <meta property="og:image" content="https://www.doubleloopgames.com/images/dlgames-social-1200x630.png">
-    <meta name="twitter:card" content="summary_large_image">
+  <!--open graph -->
+  <meta property="og:url" content="https://www.doubleloopgames.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Double Loop Games">
+  <meta property="og:description"
+    content="We're a new mobile studio dedicated to making delightful, relaxing experiences for the biggest audience in games: people who don't think of themselves as gamers.">
+  <meta property="og:image" content="https://www.doubleloopgames.com/images/dlgames-social-1200x630.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <!-- stylesheets, scripts, and fonts -->
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/site_fonts.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <!-- stylesheets, scripts, and fonts -->
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/site_fonts.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
-    <!-- jobs tabs -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-    <script type="text/javascript" src="js/organictabs.jquery.js"></script>
-    <script>
-  		$(function() {
-  			$("#job-listings").organicTabs({
-            "speed": 200,
-        });
-  		});
-  	</script>
+  <!-- jobs tabs -->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+  <script type="text/javascript" src="js/organictabs.jquery.js"></script>
+  <script>
+    $(function () {
+      $("#job-listings").organicTabs({
+        "speed": 200,
+      });
+    });
+  </script>
 
-  </head>
+</head>
 
-  <body id="home">
+<body id="home">
 
-    <!-- Mobile Nav -->
-    <input type="checkbox" class="toggle-nav" id="toggle-nav">
-    <div class="mobile-bar">
-      <label for="toggle-nav"></label>
-    </div>
+  <!-- Mobile Nav -->
+  <input type="checkbox" class="toggle-nav" id="toggle-nav">
+  <div class="mobile-bar">
+    <label for="toggle-nav"></label>
+  </div>
 
-    <div id="overlay" class="overlay"></div>
+  <div id="overlay" class="overlay"></div>
 
-    <div class="mobile-nav">
-        <ul>
-          <li class="mob-nav-link"><a href="#whoweare" id="mob-whoweare">Who we are</a></li>
-          <li class="mob-nav-link"><a href="#news" id="mob-news">News</a></li>
-          <li class="mob-nav-link"><a href="#games" id="mob-games">Games</a></li>
-          <li class="mob-nav-link"><a href="#jobs" id="mob-jobs">Jobs</a></li>
-        </ul>
-    </div>
+  <div class="mobile-nav">
+    <ul>
+      <li class="mob-nav-link"><a href="#whoweare" id="mob-whoweare">Who we are</a></li>
+      <li class="mob-nav-link"><a href="#news" id="mob-news">News</a></li>
+      <li class="mob-nav-link"><a href="#games" id="mob-games">Games</a></li>
+      <li class="mob-nav-link"><a href="#jobs" id="mob-jobs">Jobs</a></li>
+    </ul>
+  </div>
 
-    <div class="main">
+  <div class="main">
 
-      <div id="hero">
+    <div id="hero">
 
-        <header>
-          <nav>
-            <ul>
-              <li class="nav-link"><a href="#whoweare">Who we are</a></li>
-              <li class="nav-link nav-news"><a href="#news">News</a></li>
-              <li class="nav-link nav-games"><a href="#games">Games</a></li>
-              <li class="nav-link"><a href="#jobs">Jobs</a></li>
-            </ul>
-          </nav>
-        </header>
+      <header>
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="#whoweare">Who we are</a></li>
+            <li class="nav-link nav-news"><a href="#news">News</a></li>
+            <li class="nav-link nav-games"><a href="#games">Games</a></li>
+            <li class="nav-link"><a href="#jobs">Jobs</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <h1 class="nav-logo"><a href="#home">Double Loop Games</a></h1>
+      <h1 class="nav-logo"><a href="#home">Double Loop Games</a></h1>
 
-        <div>
-          <p class="message">We're a new mobile studio dedicated to making delightful, relaxing experiences for the biggest audience in games:
-           <strong>people who don't think of themselves as gamers.</strong>
-          </p>
-          <a href="#jobs" class="primary-btn">Join our Journey</a>
-        </div>
-
+      <div>
+        <p class="message">We're a new mobile studio dedicated to making delightful, relaxing experiences for the
+          biggest audience in games:
+          <strong>people who don't think of themselves as gamers.</strong>
+        </p>
+        <a href="#jobs" class="primary-btn">Join our Journey</a>
       </div>
 
-      <section id="whoweare">
-        <h2>Who we are</h2>
-        <p class="desc">We're a veteran, women-led mobile team from Kongregate, WB, Zynga, and Blizzard.</p>
-        <ul class="team">
-          <li class="bio-emily">
-            <img src="images/bio-emily.jpg" alt="Emily Greer">
-            <strong class="name">Emily Greer</strong>
-            <span class="title h5 h5-alt">Co-Founder, CEO</span>
-            <p class="bio">
-              Loves tower defense, match-3s, knitting, data, and figure skating
-              <a href="https://www.twitter.com/EmilyG" class="twitter" target="_blank">&commat;EmilyG</a>
-            </p>
-          </li>
-          <li class="bio-shelby">
-            <img src="images/bio-shelby.jpg" alt="Shelby Moledina">
-            <strong class="name">Shelby Moledina</strong>
-            <span class="title h5 h5-alt">Co-Founder, <span class="title-2">COO, Game Director</span></span>
-            <p class="bio">
-              Lifelong gamer, loves to draw, bake pies, play RPGs, and cuddle cute things
-              <a href="https://www.twitter.com/ShelbyMoledina" class="twitter" target="_blank">&commat;ShelbyMoledina</a>
-            </p>
-          </li>
- 	        <li class="bio-andy">
-            <img src="images/bio-andy.jpg" alt="Andy Bond">
-            <strong class="name">Andy Bond</strong>
-            <span class="title h5 h5-alt">Technical Director</span>
-            <p class="bio">
-              Enjoys playing RPGs, building LEGO, and exploring science fiction
-              <a href="https://www.twitter.com/LegoCylon" class="twitter" target="_blank">&commat;LegoCylon</a>
-            </p>
-          </li>
-          <li class="bio-graham">
-            <img src="images/bio-graham.jpg" alt="Graham Fratzke">
-            <strong class="name">Graham Fratzke</strong>
-            <span class="title h5 h5-alt">Art Director</span>
-            <p class="bio">
-              Professional doodler. Plays games with a controller in one hand and a glass of wine in the other
-            </p>
-          </li>
-          <li class="bio-min">
-            <img src="images/bio-min.jpg" alt="Min Lieu">
-            <strong class="name">Min Lieu</strong>
-            <span class="title h5 h5-alt">Senior Engineer</span>
-            <p class="bio">
-              Avid game player and game maker
-            </p>
-          </li>
-          <li class="bio-jon">
-            <img src="images/bio-jon.jpg" alt="Jonathan April">
-            <strong class="name">Jonathan April</strong>
-            <span class="title h5 h5-alt">Senior Producer</span>
-            <p class="bio">
-             Electronic music enthusiast, loves RPGs, photography, and DC-area sports teams
-            </p>
-          </li>
-          <li class="bio-kim">
-            <img src="images/bio-kim.png" alt="Kim Herbst">
-            <strong class="name">Kim Herbst</strong>
-            <span class="title h5 h5-alt">Senior Artist</span>
-            <p class="bio">
-             Draws too much, loves video games, and raises far too many plants
-            </p>
-          </li>
-          <li class="bio-alex">
-            <img src="images/bio-alex.jpg" alt="Alex Banks">
-            <strong class="name">Alex Banks</strong>
-            <span class="title h5 h5-alt">Senior Engineer</span>
-            <p class="bio">
-              Lifelong dabbler. Software, guitar, powerlifting, video games. Philadelphia Forever
-            </p>
-          </li>
-          <li class="bio-laura">
-            <img src="images/bio-laura.png" alt="Laura Schumacher">
-            <strong class="name">Laura Schumacher</strong>
-            <span class="title h5 h5-alt">Senior Artist</span>
-            <p class="bio">
-              Was gaming before she could walk. Loves art, code, nature and aerial dance. Also apparently likes cleaning
-            </p>
-          </li>
-        </ul>
-      </section><!-- end whoweare -->
+    </div>
 
-      <section id="news">
-        <h2>News</h2>
-        <div class="container">
-          <p class="desc">Learn more about Double Loop and our philosophy from our blog and conference talks.</p>
-          <div class="updates">
-            <a href="https://venturebeat.com/2020/02/12/double-loop-games-raises-2-5-million-to-make-mobile-games-for-everyone/" class="article" target="_blank">
-              <div class="image">
-                <img src="images/news-2020_02_10.jpg">
-              </div>
-              <div class="content">
-                <p class="inner-content">
-                  <span class="date h5">February 12, 2020</span>
-                  <span class="title">Double Loop Games Announces $2.5M Seed Investment Led by London Venture Partners</span>
-                  <span class="full-post h5 h5-alt">Learn more</span>
-                </p>
-              </div>
-            </a>
-            <ul class="talks">
-               <li>
-                <span class="tags h5">2020 - Podcast</span>
-                <a href="http://interactive.libsyn.com/emily-greer-of-double-loop-games" class="title h3" target="_blank">
-                  Emily Talks to Robin Hunicke on the AIAS Game Maker's Notebook Podcast
-                </a>
-              </li>               
-               <li>
-                <span class="tags h5">2020 - Podcast</span>
-                <a href="https://anchor.fm/thegamedevshow/episodes/TGDS-Ep-19-Shelby-M-Oregon-Trail-Relaxing-Games-Creativity-emul6b" class="title h3" target="_blank">
-                  Shelby talks about creativity, designing relaxing games, and Oregon Trail on The Game Dev Podcast
-                </a>
-              </li>
-		          <li>
-                <span class="tags h5">2020 - Podcast</span>
-                <a href="https://elitegamedevelopers.com/egd-059-starting-something-new-with-emily-greer-co-founder-and-ceo-of-double-loop/" class="title h3" target="_blank">
-                  Emily's Conversation with Joakim Achren on the Elite Game Developers Podcast
-                </a>
-              </li>
-		          <li>
-                <span class="tags h5">2017 - Conference Talk</span>
-                <a href="https://www.youtube.com/watch?time_continue=17&v=7Yrl5l7jJ9Q&feature=emb_logo" class="title h3" target="_blank">
-                  Game UX Summit 2017: "Breaking Through Labels"
-                </a>
-              </li>
-              <li>
-                <span class="tags h5">2013 - Conference Talk</span>
-                <a href="https://www.gdcvault.com/play/1018265/Building-Games-for-the-Long" class="title h3" target="_blank">
-                  GDC 2013: "Building Games For The Long-Term"
-                </a>
-              </li>
-              <li>
-                <span class="tags h5">2015 - Conference Talk</span>
-                <a href="https://www.gdcvault.com/play/1021941/Don-t-Call-Them-Whales" class="title h3" target="_blank">GDC 2015: "Don't Call Them Whales"</a>
-              </li>
-              <li>
-                <span class="tags h5">2018 - Conference Talk</span>
-                <a href="https://www.gdcvault.com/play/1025095/Data-Driven-or-Data-Blinded" class="title h3" target="_blank">GDC 2018: "Data-Driven or Data-Blinded? The Uses And Abuses of Analytics In Games"<i></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section><!-- end news -->
+    <section id="whoweare">
+      <h2>Who we are</h2>
+      <p class="desc">We're a veteran, women-led mobile team from Kongregate, WB, Zynga, and Blizzard.</p>
+      <ul class="team">
+        <li class="bio-emily">
+          <img src="images/bio-emily.jpg" alt="Emily Greer">
+          <strong class="name">Emily Greer</strong>
+          <span class="title h5 h5-alt">Co-Founder, CEO</span>
+          <p class="bio">
+            Loves tower defense, match-3s, knitting, data, and figure skating
+            <a href="https://www.twitter.com/EmilyG" class="twitter" target="_blank">&commat;EmilyG</a>
+          </p>
+        </li>
+        <li class="bio-shelby">
+          <img src="images/bio-shelby.jpg" alt="Shelby Moledina">
+          <strong class="name">Shelby Moledina</strong>
+          <span class="title h5 h5-alt">Co-Founder, <span class="title-2">COO, Game Director</span></span>
+          <p class="bio">
+            Lifelong gamer, loves to draw, bake pies, play RPGs, and cuddle cute things
+            <a href="https://www.twitter.com/ShelbyMoledina" class="twitter" target="_blank">&commat;ShelbyMoledina</a>
+          </p>
+        </li>
+        <li class="bio-andy">
+          <img src="images/bio-andy.jpg" alt="Andy Bond">
+          <strong class="name">Andy Bond</strong>
+          <span class="title h5 h5-alt">Technical Director</span>
+          <p class="bio">
+            Enjoys playing RPGs, building LEGO, and exploring science fiction
+            <a href="https://www.twitter.com/LegoCylon" class="twitter" target="_blank">&commat;LegoCylon</a>
+          </p>
+        </li>
+        <li class="bio-graham">
+          <img src="images/bio-graham.jpg" alt="Graham Fratzke">
+          <strong class="name">Graham Fratzke</strong>
+          <span class="title h5 h5-alt">Art Director</span>
+          <p class="bio">
+            Professional doodler. Plays games with a controller in one hand and a glass of wine in the other
+          </p>
+        </li>
+        <li class="bio-min">
+          <img src="images/bio-min.jpg" alt="Min Lieu">
+          <strong class="name">Min Lieu</strong>
+          <span class="title h5 h5-alt">Senior Engineer</span>
+          <p class="bio">
+            Avid game player and game maker
+          </p>
+        </li>
+        <li class="bio-jon">
+          <img src="images/bio-jon.jpg" alt="Jonathan April">
+          <strong class="name">Jonathan April</strong>
+          <span class="title h5 h5-alt">Senior Producer</span>
+          <p class="bio">
+            Electronic music enthusiast, loves RPGs, photography, and DC-area sports teams
+          </p>
+        </li>
+        <li class="bio-kim">
+          <img src="images/bio-kim.png" alt="Kim Herbst">
+          <strong class="name">Kim Herbst</strong>
+          <span class="title h5 h5-alt">Senior Artist</span>
+          <p class="bio">
+            Draws too much, loves video games, and raises far too many plants
+          </p>
+        </li>
+        <li class="bio-alex">
+          <img src="images/bio-alex.jpg" alt="Alex Banks">
+          <strong class="name">Alex Banks</strong>
+          <span class="title h5 h5-alt">Senior Engineer</span>
+          <p class="bio">
+            Lifelong dabbler. Software, guitar, powerlifting, video games. Philadelphia Forever
+          </p>
+        </li>
+        <li class="bio-laura">
+          <img src="images/bio-laura.png" alt="Laura Schumacher">
+          <strong class="name">Laura Schumacher</strong>
+          <span class="title h5 h5-alt">Senior Artist</span>
+          <p class="bio">
+            Was gaming before she could walk. Loves art, code, nature and aerial dance. Also apparently likes cleaning
+          </p>
+        </li>
+      </ul>
+    </section><!-- end whoweare -->
 
-      <section id="games">
-        <h2>Games</h2>
-        <div class="desc">
-          <p>We believe that the best games are made with love, enthusiasm, and respect for the audience. And the best games, properly supported, are enduring hobbies that connect us to each other.</p>
-          <p class="secondary">We are working on a mobile-first title with a planned 2021 launch date. Check back for more information and announcements in the coming months.</p>
-        </div>
-      </section><!-- end games -->
-
-      <section id="jobs">
-        <h2>Jobs</h2>
-        <p class="desc">To make games with longevity, you need teams that are sustainable. We're building an environment that's transparent, respectful, and family-friendly. Our founders are in San Francisco, but we'll hire anywhere with reasonable time zone overlap. Diverse candidates encouraged. Kindness expected.
-        </p>
-
-        <h4 class="h5">Current Openings</h4>
-        <p class="current-opens">While we only have a few open positions now we will be hiring engineers, artists, designers, writers, and data scientists later in the year. If you're interested please email <a href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a> with your resume and we will contact you as we open an appropriate position.</p>
-
-        <div id="job-listings">
-
-          <!-- Vertical Tabs -->
-          <ul class="job-tabs">
-            <li><a href="#lead-game-designer" class="current">Lead Game Designer</a></li>
+    <section id="news">
+      <h2>News</h2>
+      <div class="container">
+        <p class="desc">Learn more about Double Loop and our philosophy from our blog and conference talks.</p>
+        <div class="updates">
+          <a href="https://venturebeat.com/2020/02/12/double-loop-games-raises-2-5-million-to-make-mobile-games-for-everyone/"
+            class="article" target="_blank">
+            <div class="image">
+              <img src="images/news-2020_02_10.jpg">
+            </div>
+            <div class="content">
+              <p class="inner-content">
+                <span class="date h5">February 12, 2020</span>
+                <span class="title">Double Loop Games Announces $2.5M Seed Investment Led by London Venture
+                  Partners</span>
+                <span class="full-post h5 h5-alt">Learn more</span>
+              </p>
+            </div>
+          </a>
+          <ul class="talks">
+            <li>
+              <span class="tags h5">2020 - Podcast</span>
+              <a href="http://interactive.libsyn.com/emily-greer-of-double-loop-games" class="title h3" target="_blank">
+                Emily Talks to Robin Hunicke on the AIAS Game Maker's Notebook Podcast
+              </a>
+            </li>
+            <li>
+              <span class="tags h5">2020 - Podcast</span>
+              <a href="https://anchor.fm/thegamedevshow/episodes/TGDS-Ep-19-Shelby-M-Oregon-Trail-Relaxing-Games-Creativity-emul6b"
+                class="title h3" target="_blank">
+                Shelby talks about creativity, designing relaxing games, and Oregon Trail on The Game Dev Podcast
+              </a>
+            </li>
+            <li>
+              <span class="tags h5">2020 - Podcast</span>
+              <a href="https://elitegamedevelopers.com/egd-059-starting-something-new-with-emily-greer-co-founder-and-ceo-of-double-loop/"
+                class="title h3" target="_blank">
+                Emily's Conversation with Joakim Achren on the Elite Game Developers Podcast
+              </a>
+            </li>
+            <li>
+              <span class="tags h5">2017 - Conference Talk</span>
+              <a href="https://www.youtube.com/watch?time_continue=17&v=7Yrl5l7jJ9Q&feature=emb_logo" class="title h3"
+                target="_blank">
+                Game UX Summit 2017: "Breaking Through Labels"
+              </a>
+            </li>
+            <li>
+              <span class="tags h5">2013 - Conference Talk</span>
+              <a href="https://www.gdcvault.com/play/1018265/Building-Games-for-the-Long" class="title h3"
+                target="_blank">
+                GDC 2013: "Building Games For The Long-Term"
+              </a>
+            </li>
+            <li>
+              <span class="tags h5">2015 - Conference Talk</span>
+              <a href="https://www.gdcvault.com/play/1021941/Don-t-Call-Them-Whales" class="title h3"
+                target="_blank">GDC 2015: "Don't Call Them Whales"</a>
+            </li>
+            <li>
+              <span class="tags h5">2018 - Conference Talk</span>
+              <a href="https://www.gdcvault.com/play/1025095/Data-Driven-or-Data-Blinded" class="title h3"
+                target="_blank">GDC 2018: "Data-Driven or Data-Blinded? The Uses And Abuses of Analytics In
+                Games"<i></i></a>
+            </li>
           </ul>
-
-          <div class="job-list">
-
-            <!-- start Lead Game Designer -->
-            <dl id="lead-game-designer" class="job-post">
-              <dt class="job-title">Lead Game Designer</dt>
-              <dd class="job-description">
-                <p>Double Loop Games is looking for a Lead Game Designer to design gameplay and content for a new, original mobile game.</p>
-                <h5>Who we are</h5>
-                <p>
-                  We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the biggest audience in games: people who don’t think of themselves as gamers.
-                </p>
-                <p>
-                  We're building an environment that's transparent, respectful, and family-friendly. Our current team is in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse candidates encouraged. Kindness expected.
-                </p>
-                <h5>Who do we want</h5>
-                <p>
-                   Double Loop Games is looking for an experienced Lead Game Designer to help design and implement gameplay interactions and levels. The ideal candidate has a wealth of experience designing, testing, and tuning casual to midcore F2P gameplay systems, cinematics, levels and content. This designer will also be responsible for reviewing & giving feedback to bring a portion of the game to final polish level -- extremely high attention to detail is required. They should showcase a track record of high quality work and enthusiasm for their craft, and be experienced using Unity.  
-                </p>
-                <h5>Responsibilities</h5>
-                <ul>
-                  <li>Work with the Game Director to design F2P gameplay and metagame systems.  Review and test them in game, owning the feedback process of bringing them to a final, shippable polish level</li>
-                  <li>Use Unity and our custom tools to build levels and input/configure levels and large quantities of data for content unlocks & rollout.  The Lead Game Designer will create first pass tuning, but an Economy Designer will provide final tuning</li>
-                  <li>Work with a Narrative Designer and Artist to design tutorial & cinematic sequences that meld with gameplay. Review them in game, giving multiple rounds of feedback, and own the process of bringing them to final, shippable polish level</li>
-                  <li>Design & iterate on content unlock & rollout</li>
-                  <li>Integrate and finalize work in-engine</li>
-                </ul>
-                <h5>Qualifications</h5>
-                <ul>
-                  <li>4+ years industry experience</li>
-                  <li>Portfolio showcasing F2P mobile games you have worked on</li>
-                  <li>Ability to iterate quickly</li>
-                  <li>Extreme attention to detail</li>
-                  <li>Excellent communication and planning skills</li>
-                  <li>Ability to design and configure large data sets with care</li>
-		  <li>Experience with source control</li>
-		  <li>Experience with Unity</li>	
-                  <li>Experience with using playtest feedback and live player data to re-tune data</li>
-                  <li>Ability to communicate in English, both verbally and written</li>
-                  <li>Conscientious and self-motivated</li>
-                </ul>
-                <h5>Huge plusses</h5>
-                <ul>
-                  <li>Experience working in Github</li>
-                  <li>Experience with pre-planning content & mechanic rollout and difficulty curves to tune against</li>
-                  <li>Experience designing, reviewing, and finalizing tutorials/narrative/cinematics</li>
-                  <li>Experience managing and mentoring other designers</li>
-                  <li>Experience balancing portions of a F2P economy</li>
-                  <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and intimate village life</li>
-                  <li>A strong desire to step outside of your comfort zone and learn new things</li>
-                </ul>
-                <h5>What are we offering?</h5>
-                <ul>
-                  <li>Full-time role with benefits</li>
-                  <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women who are industry veterans</li>
-                  <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable internet connection</li>
-                </ul>
-                <p>
-                  Please send your full resume, references, and anything else you think we should see to <a href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be prepared for a design test, if necessary.
-                </p>
-              </dd>
-            </dl>
-            <!-- end -->
-
-          </div>
-
-        </div><!-- end #job-listings -->
-
-      </section><!-- end jobs -->
-
-      <footer>
-        <div class="container">
-          <p class="company">Double Loop Games &copy; 2020</p>
-          <p class="contact">Contact <a href="mailto:inquiries@doubleloopgames.com">inquiries@doubleloopgames.com</a></p>
         </div>
-      </footer>
+      </div>
+    </section><!-- end news -->
 
-    </div><!-- end .main -->
+    <section id="games">
+      <h2>Games</h2>
+      <div class="desc">
+        <p>We believe that the best games are made with love, enthusiasm, and respect for the audience. And the best
+          games, properly supported, are enduring hobbies that connect us to each other.</p>
+        <p class="secondary">We are working on a mobile-first title with a planned 2021 launch date. Check back for more
+          information and announcements in the coming months.</p>
+      </div>
+    </section><!-- end games -->
 
-    <script>
-      document.getElementById("mob-whoweare").addEventListener("click",hide);
-      document.getElementById("mob-news").addEventListener("click",hide);
-      document.getElementById("mob-games").addEventListener("click",hide);
-      document.getElementById("mob-jobs").addEventListener("click",hide);
-      document.getElementById("overlay").addEventListener("click",hide);
+    <section id="jobs">
+      <h2>Jobs</h2>
+      <p class="desc">To make games with longevity, you need teams that are sustainable. We're building an environment
+        that's transparent, respectful, and family-friendly. Our founders are in San Francisco, but we'll hire anywhere
+        with reasonable time zone overlap. Diverse candidates encouraged. Kindness expected.
+      </p>
 
-      function hide() {
-        document.getElementById("overlay").style.display = "none";
-        document.getElementById("toggle-nav").checked = false;
-      }
-    </script>
+      <h4 class="h5">Current Openings</h4>
+      <p class="current-opens">While we only have a few open positions now we will be hiring engineers, artists,
+        designers, writers, and data scientists later in the year. If you're interested please email <a
+          href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a> with your resume and we will contact you
+        as we open an appropriate position.</p>
 
-  </body>
+      <div id="job-listings">
+
+        <!-- Vertical Tabs -->
+        <ul class="job-tabs">
+          <li><a href="#lead-game-designer" class="current">Lead Game Designer</a></li>
+          <li><a href="#lead-product-manager">Lead Product Manager</a></li>
+          <li><a href="#lead-data-scientist">Lead Data Scientist</a></li>
+          <li><a href="#gameplay-engineer">Gameplay Engineer</a></li>
+          <li><a href="#puzzle-level-designer">Puzzle Level Designer</a></li>
+        </ul>
+
+        <div class="job-list">
+
+          <!-- start Lead Game Designer -->
+          <dl id="lead-game-designer" class="job-post">
+            <dt class="job-title">Lead Game Designer</dt>
+            <dd class="job-description">
+              <p>Double Loop Games is looking for a Lead Game Designer to design gameplay and content for a new,
+                original mobile game.</p>
+              <h5>Who we are</h5>
+              <p>
+                We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the
+                biggest audience in games: people who don’t think of themselves as gamers.
+              </p>
+              <p>
+                We're building an environment that's transparent, respectful, and family-friendly. Our current team is
+                in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse
+                candidates encouraged. Kindness expected.
+              </p>
+              <h5>Who do we want</h5>
+              <p>
+                Double Loop Games is looking for an experienced Lead Game Designer to help design and implement gameplay
+                interactions and levels. The ideal candidate has a wealth of experience designing, testing, and tuning
+                casual to midcore F2P gameplay systems, cinematics, levels and content. This designer will also be
+                responsible for reviewing & giving feedback to bring a portion of the game to final polish level --
+                extremely high attention to detail is required. They should showcase a track record of high quality work
+                and enthusiasm for their craft, and be experienced using Unity.
+              </p>
+              <h5>Responsibilities</h5>
+              <ul>
+                <li>Work with the Game Director to design F2P gameplay and metagame systems. Review and test them in
+                  game, owning the feedback process of bringing them to a final, shippable polish level</li>
+                <li>Use Unity and our custom tools to build levels and input/configure levels and large quantities of
+                  data for content unlocks & rollout. The Lead Game Designer will create first pass tuning, but an
+                  Economy Designer will provide final tuning</li>
+                <li>Work with a Narrative Designer and Artist to design tutorial & cinematic sequences that meld with
+                  gameplay. Review them in game, giving multiple rounds of feedback, and own the process of bringing
+                  them to final, shippable polish level</li>
+                <li>Design & iterate on content unlock & rollout</li>
+                <li>Integrate and finalize work in-engine</li>
+              </ul>
+              <h5>Qualifications</h5>
+              <ul>
+                <li>4+ years industry experience</li>
+                <li>Portfolio showcasing F2P mobile games you have worked on</li>
+                <li>Ability to iterate quickly</li>
+                <li>Extreme attention to detail</li>
+                <li>Excellent communication and planning skills</li>
+                <li>Ability to design and configure large data sets with care</li>
+                <li>Experience with source control</li>
+                <li>Experience with Unity</li>
+                <li>Experience with using playtest feedback and live player data to re-tune data</li>
+                <li>Ability to communicate in English, both verbally and written</li>
+                <li>Conscientious and self-motivated</li>
+              </ul>
+              <h5>Huge plusses</h5>
+              <ul>
+                <li>Experience working in Github</li>
+                <li>Experience with pre-planning content & mechanic rollout and difficulty curves to tune against</li>
+                <li>Experience designing, reviewing, and finalizing tutorials/narrative/cinematics</li>
+                <li>Experience managing and mentoring other designers</li>
+                <li>Experience balancing portions of a F2P economy</li>
+                <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and
+                  intimate village life</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+              </ul>
+              <h5>What are we offering?</h5>
+              <ul>
+                <li>Full-time role with benefits</li>
+                <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women
+                  who are industry veterans</li>
+                <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable
+                  number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable
+                  internet connection</li>
+              </ul>
+              <p>
+                Please send your full resume, references, and anything else you think we should see to <a
+                  href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be
+                prepared for a design test, if necessary.
+              </p>
+            </dd>
+          </dl>
+          <!-- end -->
+
+          <!-- start Lead Product Manager -->
+          <dl id="lead-product-manager" class="job-post hide">
+            <dt class="job-title">Lead Product Manager</dt>
+            <dd class="job-description">
+              <p>Double Loop Games is looking for an ambitious and innovative Lead Product Manager to help drive the
+                performance of a new F2P mobile title.
+              </p>
+              <h5>Who we are</h5>
+              <p>
+                We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the
+                biggest audience in games: people who don’t think of themselves as gamers.
+              </p>
+              <p>
+                We're building an environment that's transparent, respectful, and family-friendly. Our current team is
+                in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse
+                candidates encouraged. Kindness expected.
+              </p>
+              <h5>Who do we want</h5>
+              <p>
+                Double Loop Games is looking for an ambitious and innovative Lead Product Manager to help drive the
+                performance of a new F2P mobile title. You will work closely with Design, Engineering, Art and Data to
+                define feature requirements, analyze the performance of features, and use these results to guide future
+                game development.
+              </p>
+              <p>
+                In this role, you will regularly develop feature specs, develop and deploy experiments, interpret data,
+                deliver insights and make actionable recommendations that will shape our games and engage our global
+                audience.
+              </p>
+              <p>
+                You would be a perfect match for this position if you thrive in a heavily collaborative and iterative
+                environment, you are enthusiastic about leveraging data to drive results and you are excited by the
+                opportunity to make a visible impact on our games.
+              </p>
+              <h5>Responsibilities</h5>
+              <ul>
+                <li>Work with the Game Director to define and iterate on the direction and strategy of the game</li>
+                <li>Create clear and concise spec documents that can be carried out to full feature completion in
+                  collaboration with other disciplines</li>
+                <li>Review features, analyze feature performance</li>
+                <li>Collaborate with Data, Design, and Engineering to set experimentation plan using a hypothesis-driven
+                  approach</li>
+                <li>Use live data to tune features in order to maximize performance and create segmented experiences for
+                  different user cohorts</li>
+                <li>Execute experiments and analyze resulting data to assess individual feature performance</li>
+                <li>Define live event calendar strategy, and ensure flawless execution of live events</li>
+                <li>Work closely with data, design, and art to design and tune live events</li>
+                <li>Analyze live event performance, leverage insights to refine event strategy, and iterate against this
+                  process</li>
+                <li>Spec and evaluate KPI dashboards</li>
+                <li>Identify and define KPIs to measure</li>
+                <li>Identify areas of opportunity for improving performance, and help prioritize ideas to impact
+                  business goals</li>
+                <li>Conduct ongoing competitive analysis on market trends</li>
+              </ul>
+              <h5>Qualifications</h5>
+              <ul>
+                <li>B.S./B.A. degree from an accredited college/university or equivalent experience</li>
+                <li>2+ years in a Senior or Lead Product Manager role on a mobile F2P game, live operated at scale</li>
+                <li>Knowledge of Mobile Gaming KPIs and how to measure, chart, and affect them</li>
+                <li>Knowledge of or strong interest in learning Feature Design</li>
+                <li>Experience with data analysis and large data sets</li>
+                <li>Experience speccing and evaluating KPI dashboards</li>
+                <li>Experience with using playtest feedback and live player data to re-tune data</li>
+                <li>Understanding of A/B testing concepts and terminology</li>
+                <li>Ability to work cross-functionally with Design, Engineering, Art, and Data teams</li>
+                <li>Strong knowledge of Excel or Google Sheets</li>
+                <li>Excellent communication, planning, and organization skills</li>
+                <li>Extreme attention to detail</li>
+                <li>Ability to communicate in English, both verbally and written</li>
+                <li>Conscientious and self-motivated</li>
+              </ul>
+              <h5>Huge plusses</h5>
+              <ul>
+                <li>Experience working in Github</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+                <li>Experience managing and mentoring other PMs</li>
+                <li>Experience balancing portions of a F2P economy</li>
+                <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and
+                  intimate village life</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+              </ul>
+              <h5>What are we offering?</h5>
+              <ul>
+                <li>Full-time role with benefits</li>
+                <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women
+                  who are industry veterans</li>
+                <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable
+                  number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable
+                  internet connection</li>
+              </ul>
+              <p>
+                Please send your full resume, references, and anything else you think we should see to <a
+                  href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be
+                prepared for a design test, if necessary.
+              </p>
+            </dd>
+          </dl>
+          <!-- end -->
+          <!-- start Lead Data Scientist -->
+          <dl id="lead-data-scientist" class="job-post hide">
+            <dt class="job-title">Lead Data Scientist</dt>
+            <dd class="job-description">
+              <p>Double Loop Games is looking for a Lead Data Scientist to analyze & predict player behavior for a new,
+                original mobile game.</p>
+              <h5>Who we are</h5>
+              <p>
+                We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the
+                biggest audience in games: people who don’t think of themselves as gamers.
+              </p>
+              <p>
+                We're building an environment that's transparent, respectful, and family-friendly. Our current team is
+                in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse
+                candidates encouraged. Kindness expected.
+              </p>
+              <h5>Who do we want</h5>
+              <p>
+                Double Loop Games is looking for an experienced Lead Data Scientist to help us understand, react to, and
+                predict player experience. The ideal candidate is very familiar with the live operation of a F2P mobile
+                game at scale. This Data Scientist will work closely with product management, design, engineering, and
+                marketing on a variety of areas from level balancing to user acquisition campaign optimization. They
+                should showcase a track record of high quality work and enthusiasm for their craft, and be experienced
+                using common analysis practices & technologies.
+              </p>
+              <h5>Responsibilities</h5>
+              <ul>
+                <li>Gather requirements from product management, design, and other stakeholders to track KPIs of
+                  interest</li>
+                <li>Build charts & dashboards to visualize KPIs in an easily digestible format</li>
+                <li>Collaborate with client and backend engineers to record & report metrics</li>
+                <li>Incorporate third-party information from app stores, marketing/attribution data, and ad networks
+                </li>
+                <li>Measure operational success & work with the product manager to identify opportunities for
+                  improvement including player economies, sales, and storefront engagement</li>
+                <li>Conduct rigorous A/B testing of features and communicate outcomes clearly to a broad audience</li>
+                <li>Work with gameplay engineers to build AI that can play puzzles and predict player difficulty &
+                  facilitate tuning</li>
+                <li>Work with marketing to build a predictive model of player LTV and other tools needed for user
+                  acquisition optimization</li>
+                <li>Identify player segments that can be used for gameplay experiments and marketing</li>
+                <li>Facilitate data migration and recovery to maximize flexibility & retention of data</li>
+                <li>Support the rollout of new game versions while comparing & contrasting KPIs</li>
+                <li>Ensure that governmental compliance requirements are satisfied for data retention & deletion (i.e.
+                  GDPR)</li>
+              </ul>
+              <h5>Qualifications</h5>
+              <ul>
+                <li>3+ years in a similar role</li>
+                <li>A degree or equivalent experience in computer science, mathematics, or statistics</li>
+                <li>Ability to craft effective & efficient SQL plus a high level language like Python or R</li>
+                <li>Familiarity with ETL architecture used for client- and server-based recording</li>
+                <li>Familiarity with doing analysis on large data sets</li>
+                <li>Familiarity with cloud computing using AWS, Azure, GCP, or equivalent</li>
+                <li>Expertise with data visualization tools like Tableau or Redash</li>
+                <li>Comfortable using Excel or Google Sheet formulas as needed</li>
+                <li>Ability to iterate quickly</li>
+                <li>Excellent communication and planning skills</li>
+                <li>Extreme attention to detail</li>
+                <li>Experience with git or similar version control systems</li>
+                <li>Conscientious and self-motivated</li>
+              </ul>
+              <h5>Huge plusses</h5>
+              <ul>
+                <li>Interest or experience with AI or machine learning</li>
+                <li>Familiarity with BigQuery, Redshift, or Synapse</li>
+                <li>Familiarity with C# and ASP.NET Core</li>
+                <li>Experience with Unity</li>
+                <li>Experience managing and mentoring other data scientists or analysts</li>
+                <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and
+                  intimate village life</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+              </ul>
+              <h5>What are we offering?</h5>
+              <ul>
+                <li>Full-time role with benefits</li>
+                <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women
+                  who are industry veterans</li>
+                <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable
+                  number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable
+                  internet connection</li>
+              </ul>
+              <p>
+                Please send your full resume, references, and anything else you think we should see to <a
+                  href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be
+                prepared for a design test, if necessary.
+              </p>
+            </dd>
+          </dl>
+          <!-- end -->
+          <!-- end -->
+          <!-- start Gameplay Engineer -->
+          <dl id="gameplay-engineer" class="job-post hide">
+            <dt class="job-title">Gameplay Engineer</dt>
+            <dd class="job-description">
+              <p>Double Loop Games is looking for a Gameplay Engineer to build features for a new, original mobile game.
+              </p>
+              <h5>Who we are</h5>
+              <p>
+                We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the
+                biggest audience in games: people who don’t think of themselves as gamers.
+              </p>
+              <p>
+                We're building an environment that's transparent, respectful, and family-friendly. Our current team is
+                in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse
+                candidates encouraged. Kindness expected.
+              </p>
+              <h5>Who do we want</h5>
+              <p>
+                Double Loop Games is looking for a Gameplay Engineer to add new puzzle, meta-game, and AI features in
+                Unity. The ideal candidate is familiar with F2P mobile gameplay engineering and operating a live game.
+                This gameplay engineer will work closely with art, design, and engineering to build our shared vision.
+                They should showcase a track record of high quality work and enthusiasm for their craft, and be
+                experienced using common engineering practices & technologies.
+              </p>
+              <h5>Responsibilities</h5>
+              <ul>
+                <li>Gather requirements from art & design for new gameplay features</li>
+                <li>Build extensible code that implements those features while minimizing bugs</li>
+                <li>Ensure features are intuitive and reasonably customizable for design and art to use</li>
+                <li>Build an AI that can play puzzles and predict player difficulty & facilitate tuning</li>
+                <li>Leverage & extend existing technology when feasible to implement new features</li>
+                <li>Integrate graybox art created for new features</li>
+                <li>Prepare the rollout of new game versions while continuing to support the previous version</li>
+                <li>Solicit & contribute to code reviews from others on the engineering team</li>
+              </ul>
+              <h5>Qualifications</h5>
+              <ul>
+                <li>2+ years of experience with Unity and C#</li>
+                <li>2+ years of experience with gameplay engineering & AI</li>
+                <li>A degree or equivalent experience in computer science</li>
+                <li>Ability to iterate quickly</li>
+                <li>Extreme attention to detail</li>
+                <li>Excellent communication and planning skills</li>
+                <li>Experience with git or similar version control systems</li>
+                <li>Conscientious and self-motivated</li>
+              </ul>
+              <h5>Huge plusses</h5>
+              <ul>
+                <li>Experience implementing puzzle game simulation</li>
+                <li>Experience with machine learning</li>
+                <li>Experience developing mobile games</li>
+                <li>Experience operating a live game</li>
+                <li>Familiarity with ASP.NET Core</li>
+                <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and
+                  intimate village life</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+              </ul>
+              <h5>What are we offering?</h5>
+              <ul>
+                <li>Full-time role with benefits</li>
+                <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women
+                  who are industry veterans</li>
+                <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable
+                  number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable
+                  internet connection</li>
+              </ul>
+              <p>
+                Please send your full resume, references, and anything else you think we should see to <a
+                  href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be
+                prepared for a design test, if necessary.
+              </p>
+            </dd>
+          </dl>
+          <!-- end -->
+
+   <!-- start Puzzle Level Designer -->
+          <dl id="puzzle-level-designer" class="job-post hide">
+            <dt class="job-title">Puzzle Level Designer</dt>
+            <dd class="job-description">
+              <p>Double Loop Games is looking for a Contract Puzzle Level Designer to help create levels for a new, original mobile game.  The contract would begin iimmediately and extend for several months.  Full or part-time may be available.
+              </p>
+              <h5>Who we are</h5>
+              <p>
+                We are a well-funded mobile game start-up focused on making delightful, relaxing experiences for the
+                biggest audience in games: people who don’t think of themselves as gamers.
+              </p>
+              <p>
+                We're building an environment that's transparent, respectful, and family-friendly. Our current team is
+                in California and Oregon, but we're happy to work with people remotely anywhere in the Americas. Diverse
+                candidates encouraged. Kindness expected.
+              </p>
+              <h5>Who do we want</h5>
+              <p>
+                Double Loop Games is looking for an experienced mobile games Puzzle Level Designer to help create puzzle levels for our new, original game. The ideal candidate has a wealth of experience creating, testing, tuning and balancing F2P puzzle levels in one of the following genres: Match-3, Blast, Merge, or possibly Bubble Shooter.  They should showcase a track record of high quality work and enthusiasm for their craft.
+              </p>
+              <h5>Responsibilities</h5>
+              <ul>
+                <li>Use our custom tool to create a limited campaign of high-quality, fun, well-tuned puzzle levels using and combining our mechanics in fresh ways.</li>
+                <li>Spearhead internal puzzle level playtesting and incorporate feedback to tune levels before they are launched.</li>
+                <li>Showcase excellent communication and planning skills.</li>
+                <li>Integrate and finalize work in-engine.</li>
+              </ul>
+              <h5>Qualifications</h5>
+              <ul>
+                <li>2+ years of industry experience</li>
+                <li>Portfolio showcasing F2P mobile puzzles you have designed and launched (any genre)</li>
+                <li>Ability to iterate quickly</li>
+                <li>Experience with using playtest feedback and live player data to re-tune puzzles</li>
+                <li>Experience creating puzzles in a game engine</li>
+                <li>Experience with git or similar version control systems</li>
+                <li>Ability to communicate in English, both verbally and in writing</li>
+                <li>Conscientious and self-motivated</li>
+              </ul>
+              <h5>Huge plusses</h5>
+              <ul>
+                <li>Experience working in Unity & Github</li>
+                <li>Experience with pre-planning campaign mechanic rollout and difficulty curves to tune puzzles against</li>
+                <li>A love of relaxing, delightful gameplay, and beautiful worlds filled with both outdoor spaces and
+                  intimate village life</li>
+                <li>A strong desire to step outside of your comfort zone and learn new things</li>
+              </ul>
+              <h5>What are we offering?</h5>
+              <ul>
+                <li>Full-time contract role</li>
+                <li>Interesting, highly original work in a small, supportive and well-funded start-up led by two women
+                  who are industry veterans</li>
+                <li>Flexible working arrangements. Work from home wherever you may be as long as you have a reasonable
+                  number of overlapping hours with the pacific time zone (+/- 3 hours for this role) and fast, reliable
+                  internet connection</li>
+              </ul>
+              <p>
+                Please send your full resume, references, and anything else you think we should see to <a
+                  href="mailto:jobs@doubleloopgames.com">jobs@doubleloopgames.com</a>. Candidates should also be
+                prepared for a design test, if necessary.
+              </p>
+            </dd>
+          </dl>
+        </div>
+
+      </div><!-- end #job-listings -->
+
+    </section><!-- end jobs -->
+
+    <footer>
+      <div class="container">
+        <p class="company">Double Loop Games &copy; 2020</p>
+        <p class="contact">Contact <a href="mailto:inquiries@doubleloopgames.com">inquiries@doubleloopgames.com</a></p>
+      </div>
+    </footer>
+
+  </div><!-- end .main -->
+
+  <script>
+    document.getElementById("mob-whoweare").addEventListener("click", hide);
+    document.getElementById("mob-news").addEventListener("click", hide);
+    document.getElementById("mob-games").addEventListener("click", hide);
+    document.getElementById("mob-jobs").addEventListener("click", hide);
+    document.getElementById("overlay").addEventListener("click", hide);
+
+    function hide() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("toggle-nav").checked = false;
+    }
+  </script>
+
+</body>
+
 </html>
