@@ -1,6 +1,8 @@
 name: Push continuous integration
 on:
   push:
+    branches:
+      - trunk
 jobs:
   proof:
     runs-on: ubuntu-latest
