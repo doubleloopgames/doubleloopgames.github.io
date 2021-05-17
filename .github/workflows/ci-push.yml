@@ -1,7 +1,6 @@
-name: CI
+name: Push continuous integration
 on:
   push:
-  pull_request:
 jobs:
   proof:
     runs-on: ubuntu-latest
