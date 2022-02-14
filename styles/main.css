@@ -28,8 +28,8 @@ header nav .nav-link a { display: inline-block; width: 15rem; font: 600 1.6rem/4
 header nav .nav-news { margin-right: 13.7rem; }
 header nav .nav-games { margin-left: 13.7rem; }
 
-.nav-logo { width: 17.3rem; position: absolute; top: 5rem; left: 0; right: 0; margin: 0 auto; }
-.nav-logo a { display: inline-block; width: 17.3rem; height: 12.5rem; background: transparent url("../images/doubleloop-logo.png") no-repeat 0 0; background-size: 17.3rem 12.5rem; text-indent: -9999px; }
+.nav-logo { position: absolute; top:  2.5rem; left: 0; right: 0; margin: auto;}
+.nav-logo a { display: inline-block; width: 25.3rem; height: 18.2rem; background: transparent url("../images/doubleloop-logo.png") no-repeat 0 0; background-size: 25.3rem 18.2rem; text-indent: -9999px; }
 
 section { padding: 6rem 0; border-top: 4px solid #f4e4bc; text-align: center; }
 .main { position: relative; }
