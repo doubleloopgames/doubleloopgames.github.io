@@ -231,8 +231,9 @@ footer .contact a { margin-left: 2rem; font-size: 1.8rem; font-family: 'Noah-Reg
 
   /* don't display desktop nav */
   header nav { border-bottom: 0; }
-  .nav-logo { position: absolute; top: 6rem; left: 0; right: 0; margin: 0 auto; width: 14.5rem; }
-  .nav-logo a { width: 14.5rem; height: 10.1rem; background-size: 14.5rem 10.1rem; }
+
+  .nav-logo { width:  25.3rem; position: absolute; top: 1rem; left: 0; right: 0; margin: auto;}
+  .nav-logo a { width: 25.3rem; height: 18.2rem; background-size: 25.3rem 18.2rem; }
   .nav-link { display: none; }
 
   /* style default collapsed mobile bar */
