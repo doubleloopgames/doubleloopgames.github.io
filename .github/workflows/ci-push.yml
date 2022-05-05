@@ -14,3 +14,5 @@ jobs:
           check_opengraph: false
           tokens: |
             {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          url_ignore: |
+            https://www.data.ai/en/resources/gamechangers/
