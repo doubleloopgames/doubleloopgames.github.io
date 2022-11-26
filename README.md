@@ -2,7 +2,7 @@
 # doubleloopgames.github.io
 ![Push continuous integration](https://github.com/doubleloopgames/doubleloopgames.github.io/workflows/Push%20continuous%20integration/badge.svg)
 
-Double Loop Games website instructions
+Double Loop Games website instructions:
 
 ---
 
